@@ -118,7 +118,7 @@ header ul li a {
 .card-price {
     font-weight: bold;
     font-size: 1.375rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -126,7 +126,7 @@ header ul li a {
     background-color: #E95A08;
     color: white;
     font-weight: 600;
-    text-wrap: nowrap;
+    width: 100%;
     border: none;
 }
 
@@ -222,6 +222,7 @@ header ul li a {
 .join-section {
     margin-top: 120px;
 }
+
 .join {
     background-image: url(../images/news-letter-bg.png);
     background-repeat: no-repeat;
@@ -247,7 +248,11 @@ input::placeholder {
 
 .btn-2 {
     padding: 19px 53.5px;
+    background-color: #E95A08;
+    color: white;
+    font-weight: 600;
     float: left;
+    border: none;
 }
 
 .join-title {
@@ -279,6 +284,7 @@ input::placeholder {
     .banner {
         flex-direction: column-reverse;
         gap: 28px;
+        margin-bottom: 65px;
     }
 
     .banner-title {
@@ -337,7 +343,7 @@ input::placeholder {
         flex-direction: column;
         gap: 20px;
         padding: 16px;
-        margin-top: 51.5px;
+        margin-top: 30px;
     }
 
     .img-1,
@@ -362,11 +368,17 @@ input::placeholder {
     .btn-2 {
         padding: 19px 12px;
     }
-    .join{
+
+    .join-section {
+        margin-top: 40px;
+    }
+
+    .join {
         width: 100%;
         background-size: cover;
         height: 276px;
     }
+
     input[type=email] {
         width: 218px;
         height: 50px;
