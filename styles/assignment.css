@@ -17,7 +17,8 @@
 }
 
 header,
-main {
+main,
+footer {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -54,15 +55,19 @@ main {
     margin-bottom: 120px;
 }
 
+.navbar img {
+    width: 135px;
+}
+
 header ul {
     gap: 3rem;
 }
 
-header ul li {
+ul li {
     list-style: none;
 }
 
-header ul li a {
+ul li a {
     text-decoration: none;
 }
 
@@ -108,9 +113,11 @@ header ul li a {
     row-gap: 1.8rem;
     margin-top: 49px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
+
 .card-title {
     font-weight: 500;
     font-size: 1.375rem;
@@ -261,6 +268,28 @@ input::placeholder {
     margin-bottom: 23px;
 }
 
+/* footer related styles */
+footer ul li a{
+    color: rgba(107, 114, 128, 1);
+    text-wrap: nowrap;
+}
+footer ul li{
+    margin-bottom: 32px;
+}
+.footer{
+    gap: 110.67px;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+.part-4{
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 153px;
+    margin-bottom: 16px;
+}
 /* small device */
 @media screen and (max-width: 576px) {
 
@@ -270,6 +299,12 @@ input::placeholder {
 
     .li {
         display: none;
+    }
+    .navbar{
+        margin-bottom: 28px;
+    }
+    .navbar img {
+        width: 63px;
     }
 
     nav>img,
@@ -322,8 +357,7 @@ input::placeholder {
         display: none;
     }
 
-    .plants-lover,
-    .latest-deal {
+    .plants-lover{
         flex-direction: column;
         gap: 0px;
     }
@@ -375,4 +409,19 @@ input::placeholder {
     input[type=email] {
         width: 218px;
         height: 50px;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-right: 14px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer ul{
+        padding-left: 0px;
+    }
+    .logo{
+        width: 180px;
+    }
+    .last{
+        margin-bottom: 0px;
     }
