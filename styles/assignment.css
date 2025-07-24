@@ -104,12 +104,13 @@ header ul li a {
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 1rem;
+    row-gap: 1.8rem;
     margin-top: 49px;
+}
+.card img{
     width: 100%;
 }
-
 .card-title {
     font-weight: 500;
     font-size: 1.375rem;
@@ -295,17 +296,9 @@ input::placeholder {
         font-size: 0.875rem;
     }
 
-    .card {
-        width: 171px;
-    }
-
-    .card img {
-        width: 100%;
-    }
-
     .card-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0px;
+        column-gap: 0px;
     }
 
     .section-title {
