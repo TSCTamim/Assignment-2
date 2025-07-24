@@ -23,11 +23,19 @@ header,main{
 .display-flex{
     display: flex;
 }
+.light-grey{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem;
+}
+*{
+    margin: 0;
+}
 
 /* nav related styles */
 .navbar{
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 120px;
 }
 header ul{
     gap: 3rem;
@@ -49,17 +57,47 @@ header ul li a{
     color: black;
 }
 
+/* banner related styles */
+.banner{
+    align-items:last baseline;
+    margin-bottom: 120px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 13px;
+}
+#fresh-flowers{
+    color: #E95A08;
+}
+.banner-img{
+    width:100%;
+}
+
 /* small device */
 @media screen and (max-width: 576px) {
-    .nav-1,.nav-2,.nav-3{
+    ul{
+        gap: none;
+    }
+    .li{
         display: none;
     }
-    nav img{
-        margin-left: 16px;
+    nav>img, .banner-left{
+        padding-left: 16px;
     }
-    .nav-4{
-        text-wrap: nowrap;
-        margin-right: 16px;
+    .nav-4, .banner-left{
+        padding-right: 16px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    .light-grey{
+        font-size: 0.875rem;
     }
     
+     
 }
